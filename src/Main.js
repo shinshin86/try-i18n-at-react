@@ -18,11 +18,17 @@ const ChangeBtn = styled.button`
 class Main extends Component {
   changeLocale(locale, message, localeUpdate) {
     if (window.confirm(message)) {
+      // fluctuation correction
+      if (/en/.test(locale)) locale = 'en';
+
       switch (locale) {
-        case 'en-GB':
+        case 'en':
           localeUpdate('ja');
           break;
         case 'ja':
+          localeUpdate('ko');
+          break;
+        case 'ko':
           localeUpdate('en');
           break;
         default:
