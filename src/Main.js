@@ -15,18 +15,18 @@ const ChangeBtn = styled.button`
   font-size: 16px;
 `;
 
-class App extends Component {
-  changeLocale(locale, message) {
+class Main extends Component {
+  changeLocale(locale, message, localeUpdate) {
     if (window.confirm(message)) {
       switch (locale) {
         case 'en-GB':
-          console.log('to ja');
+          localeUpdate('ja');
           break;
         case 'ja':
-          console.log('to en');
+          localeUpdate('en');
           break;
         default:
-          console.log('to en');
+          localeUpdate('en');
           break;
       }
     }
@@ -34,7 +34,7 @@ class App extends Component {
 
   render() {
     const name = 'John';
-    console.log(this.props.intl);
+    console.log('debug ===> :', this.props);
     const { locale, messages } = this.props.intl;
 
     return (
@@ -48,7 +48,11 @@ class App extends Component {
         <div>
           <ChangeBtn
             onClick={() =>
-              this.changeLocale(locale, messages['ChangeLocale.Msg'])
+              this.changeLocale(
+                locale,
+                messages['ChangeLocale.Msg'],
+                this.props.localeUpdate
+              )
             }
           >
             <FormattedMessage id="ChangeLocale.Btn" />
@@ -59,4 +63,4 @@ class App extends Component {
   }
 }
 
-export default injectIntl(App);
+export default injectIntl(Main);

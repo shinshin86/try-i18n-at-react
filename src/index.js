@@ -1,14 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Main from './Main';
 import { IntlProvider } from 'react-intl';
 import { chooseLocale } from './i18n';
 
-const locale = navigator.language;
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      locale: navigator.language
+    };
+    this.localeUpdate = this.localeUpdate.bind(this);
+  }
 
-ReactDOM.render(
-  <IntlProvider locale={locale} messages={chooseLocale(locale)}>
-    <App />
-  </IntlProvider>,
-  document.getElementById('root')
-);
+  localeUpdate = locale => {
+    this.setState({ locale });
+  };
+
+  render() {
+    const { locale } = this.state;
+    return (
+      <IntlProvider locale={locale} messages={chooseLocale(locale)}>
+        <Main {...this.state} localeUpdate={this.localeUpdate} />
+      </IntlProvider>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));

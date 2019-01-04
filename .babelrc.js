@@ -9,5 +9,8 @@ module.exports = {
       },
     ],
     '@babel/react'
+  ],
+  plugins: [
+  '@babel/plugin-proposal-class-properties'
   ]
 }
