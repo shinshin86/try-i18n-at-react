@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import styled from 'styled-components';
 
+const Container = styled.div`
+  text-align: center;
+`;
 const Title = styled.h3`
   font-size: 18px;
 `;
@@ -44,7 +47,7 @@ class Main extends Component {
     const { locale, messages } = this.props.intl;
 
     return (
-      <div>
+      <Container>
         <Title>
           <FormattedMessage id="Top.Title" />
         </Title>
@@ -64,7 +67,7 @@ class Main extends Component {
             <FormattedMessage id="ChangeLocale.Btn" />
           </ChangeBtn>
         </div>
-      </div>
+      </Container>
     );
   }
 }
