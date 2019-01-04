@@ -3,7 +3,7 @@
     "dev": "node server.js",
     "build": "webpack",
     "lint": "eslint --fix src/**/*.js",
-    "prettier": "prettier --write **/*.{js,html,json,md} src/**/*.js",
+    "prettier": "prettier --write **/*.{js,html,json,yml,md} src/**/*.{js,html,json,yml,md}",
     "fmt": "yarn lint && yarn prettier"
   },
   "prettier": {
@@ -32,10 +32,12 @@
     "eslint-plugin-react": "^7.12.0",
     "eslint-plugin-standard": "^4.0.0",
     "express": "^4.16.4",
+    "json-loader": "^0.5.7",
     "prettier": "^1.15.3",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0",
     "webpack-dev-middleware": "^3.4.0",
-    "webpack-hot-middleware": "^2.24.3"
+    "webpack-hot-middleware": "^2.24.3",
+    "yaml-flat-loader": "^0.1.0"
   }
 }

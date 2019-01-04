@@ -1,0 +1,6 @@
+Top:
+  Title: Sample Title
+  Message: Hello! { name }!
+ChangeLocale:
+  Btn: Switch languages
+  Msg: Switch language to Japanese. Is it OK?

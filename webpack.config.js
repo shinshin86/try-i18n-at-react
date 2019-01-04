@@ -27,6 +27,11 @@ module.exports = {
       use: [ 'babel-loader' ],
       exclude: /node_modules/,
       include: __dirname,
-    }],
+    },
+    {
+      test: /\.yml$/,
+      use: [{ loader: 'json-loader' }, { loader: 'yaml-flat-loader' }]
+    }
+    ],
   }
 }

@@ -3,9 +3,9 @@ import jaLocaleData from 'react-intl/locale-data/ja';
 import enLocaleData from 'react-intl/locale-data/en';
 import koLocaleData from 'react-intl/locale-data/ko';
 
-import en from './en';
-import ja from './ja';
-import ko from './ko';
+import en from './en.yml';
+import ja from './ja.yml';
+import ko from './ko.yml';
 
 addLocaleData(enLocaleData);
 addLocaleData(jaLocaleData);
