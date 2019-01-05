@@ -2,12 +2,25 @@
   "scripts": {
     "dev": "node server.js",
     "build": "webpack",
+    "test": "jest",
     "lint": "eslint --fix src/**/*.js",
     "prettier": "prettier --write **/*.{js,html,json,yml,md} src/**/*.{js,html,json,yml,md}",
     "fmt": "yarn lint && yarn prettier"
   },
   "prettier": {
     "singleQuote": true
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "yml"
+    ],
+    "transform": {
+      "\\.js$": "babel-jest",
+      "\\.yml$": "jest-yaml-flat-transfrom"
+    }
   },
   "dependencies": {
     "react": "^16.7.0",
@@ -21,6 +34,7 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "eslint": "5.6.0",
     "eslint-config-prettier": "^3.3.0",
@@ -32,6 +46,8 @@
     "eslint-plugin-react": "^7.12.0",
     "eslint-plugin-standard": "^4.0.0",
     "express": "^4.16.4",
+    "jest": "^23.6.0",
+    "jest-yaml-flat-transfrom": "^0.1.0",
     "json-loader": "^0.5.7",
     "prettier": "^1.15.3",
     "webpack": "^4.28.3",

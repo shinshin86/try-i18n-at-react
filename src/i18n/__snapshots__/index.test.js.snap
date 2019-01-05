@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check whitelist [en] 1`] = `Array []`;
+
+exports[`check whitelist [ja] 1`] = `Array []`;
+
+exports[`check whitelist [ko] 1`] = `Array []`;
+
+exports[`snapshot [en] 1`] = `
+Object {
+  "ChangeLocale.Btn": "Switch languages",
+  "ChangeLocale.Msg": "Switch language to Japanese. Is it OK?",
+  "Top.Message": "Hello! { name }!",
+  "Top.Title": "Sample Title",
+}
+`;
+
+exports[`snapshot [ja] 1`] = `
+Object {
+  "ChangeLocale.Btn": "言語を切り替える",
+  "ChangeLocale.Msg": "言語を韓国語に切り替えます。よろしいですか?",
+  "Top.Message": "こんにちは! { name }!",
+  "Top.Title": "サンプルタイトル",
+}
+`;
+
+exports[`snapshot [ko] 1`] = `
+Object {
+  "ChangeLocale.Btn": "언어 전환",
+  "ChangeLocale.Msg": "언어를 영어로 전환하십시오. 괜찮습니까?",
+  "Top.Message": "여보세요! { name }!",
+  "Top.Title": "샘플 제목",
+}
+`;
