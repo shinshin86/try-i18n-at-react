@@ -4,3 +4,6 @@ Top:
 ChangeLocale:
   Btn: 언어 전환
   Msg: 언어를 영어로 전환하십시오. 괜찮습니까?
+Meta:
+  Title: 샘플 제목
+  Description: 이것은 i18n이있는 샘플 앱입니다.

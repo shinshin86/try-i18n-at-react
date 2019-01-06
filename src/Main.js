@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import styled from 'styled-components';
+import MetaTags from './MetaTags';
 
 const Container = styled.div`
   text-align: center;
@@ -48,6 +49,7 @@ class Main extends Component {
 
     return (
       <Container>
+        <MetaTags {...this.props.intl} />
         <Title>
           <FormattedMessage id="Top.Title" />
         </Title>

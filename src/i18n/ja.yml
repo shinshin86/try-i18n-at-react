@@ -4,3 +4,6 @@ Top:
 ChangeLocale:
   Btn: 言語を切り替える
   Msg: 言語を韓国語に切り替えます。よろしいですか?
+Meta:
+  Title: サンプルタイトル
+  Description: これはi18n対応のサンプルアプリです

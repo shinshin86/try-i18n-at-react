@@ -25,6 +25,7 @@
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
     "react-intl": "^2.7.2",
     "styled-components": "^4.1.3"
   },

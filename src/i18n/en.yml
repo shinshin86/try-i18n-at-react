@@ -4,3 +4,6 @@ Top:
 ChangeLocale:
   Btn: Switch languages
   Msg: Switch language to Japanese. Is it OK?
+Meta:
+  Title: Sample Title
+  Description: This is sample app with i18n
