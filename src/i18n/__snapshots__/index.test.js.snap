@@ -10,6 +10,8 @@ exports[`snapshot [en] 1`] = `
 Object {
   "ChangeLocale.Btn": "Switch languages",
   "ChangeLocale.Msg": "Switch language to Japanese. Is it OK?",
+  "Meta.Description": "This is sample app with i18n",
+  "Meta.Title": "Sample Title",
   "Top.Message": "Hello! { name }!",
   "Top.Title": "Sample Title",
 }
@@ -19,6 +21,8 @@ exports[`snapshot [ja] 1`] = `
 Object {
   "ChangeLocale.Btn": "言語を切り替える",
   "ChangeLocale.Msg": "言語を韓国語に切り替えます。よろしいですか?",
+  "Meta.Description": "これはi18n対応のサンプルアプリです",
+  "Meta.Title": "サンプルタイトル",
   "Top.Message": "こんにちは! { name }!",
   "Top.Title": "サンプルタイトル",
 }
@@ -28,6 +32,8 @@ exports[`snapshot [ko] 1`] = `
 Object {
   "ChangeLocale.Btn": "언어 전환",
   "ChangeLocale.Msg": "언어를 영어로 전환하십시오. 괜찮습니까?",
+  "Meta.Description": "이것은 i18n이있는 샘플 앱입니다.",
+  "Meta.Title": "샘플 제목",
   "Top.Message": "여보세요! { name }!",
   "Top.Title": "샘플 제목",
 }
